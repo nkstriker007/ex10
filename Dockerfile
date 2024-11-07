@@ -4,7 +4,7 @@ FROM python:3.9-slim
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-COPY . /app
+COPY server.py /app
 
 # Install the required packages
 
@@ -15,4 +15,4 @@ EXPOSE 5000
 ENV FLASK_APP=app.py
 
 # Run the Flask app
-CMD ["python", "app.py"]
+CMD ["python", "server.py"]
