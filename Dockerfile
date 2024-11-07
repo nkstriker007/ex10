@@ -12,7 +12,7 @@ COPY server.py /app
 EXPOSE 5000
 
 # Define environment variable
-ENV FLASK_APP=app.py
+ENV FLASK_APP=server.py
 
 # Run the Flask app
 CMD ["python", "server.py"]
